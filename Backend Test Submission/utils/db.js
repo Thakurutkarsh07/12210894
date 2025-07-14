@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 
 module.exports = () => {
-  mongoose.connect("mongodb+srv://utkarshthakur0110:thakur@cluster0.4k4ywhw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+  mongoose.connect("mongodb://localhost:27017/urlshortener", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }).then(() => console.log("Database connected"));
