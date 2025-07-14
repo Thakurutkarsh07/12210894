@@ -28,12 +28,17 @@ RootFolder/
     ├── app.js          → Main server file
     ├── routes/
     │   └── short.js     → API routes for URL creation and stats
+    │   └── redirect.js
     ├── controllers/
     │   └── short.js     → Logic for handling short URLs
+    │   └── redirect.js
     ├── models/
-    │   └── short.js     → MongoDB schema for URLs
+    │   └── link.js     → MongoDB schema for URLs
+    │   └── generateCode.js
     └── utils/
+        └── db.js
         └── generate.js  → Function to generate random shortcodes
+    
 ```
 
 ---
